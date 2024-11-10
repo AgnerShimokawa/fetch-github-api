@@ -35,8 +35,8 @@ main {
 }
 
 .container {
-  width: 60%; /* se for uma tela menor que 980px vai se adaptar a 70% */
-  max-width: 960px; /* quando chegar em 980px para de aumentar */
+  width: 60%; 
+  max-width: 960px; 
   box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
   background-color: #fff;
   display: flex;
@@ -141,11 +141,48 @@ main {
   display: block;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
+  text-align: left;
 }
 
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
   color: #fff
+}
+
+.container .profile-data .repositories ul .repo-name{
+  font-weight: 700;
+}
+
+.container .profile-data .repositories .repo-infos{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-top: 3px;
+}
+
+.container .profile-data .repositories .repo-infos .repo-info{
+  background-color: blueviolet;
+  color: white;
+  padding: 0px 3px;
+  margin: 3px;
+  border-radius: 3px;
+}
+
+/* EVENTS */
+
+.container .profile-data .events h2{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .profile-data .events li{
+  padding: 10px;
+  margin: 5px;
+  font-weight: 700;
+}
+
+.container .profile-data .events .event-message{
+  font-weight: 300;
 }
 
 .container .profile-data.hide{
